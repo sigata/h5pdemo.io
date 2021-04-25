@@ -2,10 +2,18 @@
   "name": "h5p-demo",
   "version": "1.0.0",
   "description": "h5p standalone demo",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sikandar Tamboli",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "h5p-standalone": "^3.1.0",
+    "json-formatter-js": "^2.3.4"
+  }
 }

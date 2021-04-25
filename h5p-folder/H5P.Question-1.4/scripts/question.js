@@ -911,7 +911,6 @@ H5P.Question = (function ($, EventDispatcher, JoubelUI) {
             }
           }).on('keypress', function (event) {
             if (event.which === 32) {
-              event.preventDefault(); // Prevent default behaviour; page scroll down
               scaleImage.apply(this); // Space bar pressed
             }
           });

@@ -214,6 +214,13 @@
     };
 
     /**
+     * @returns {string} Answer
+     */
+    this.getUserInput = function () {
+      return $input.val();
+    };
+
+    /**
      * @param {string} text New input text
      */
     this.setUserInput = function (text) {

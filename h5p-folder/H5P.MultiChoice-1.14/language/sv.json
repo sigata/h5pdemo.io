@@ -4,43 +4,43 @@
       "label": "Media",
       "fields": [
         {
-          "label": "Typ",
-          "description": "Valfri media att visa ovanför frågan."
+          "label": "Type",
+          "description": "Optional media to display above the question."
         },
         {
-          "label": "Inaktivera zoomning i bild"
+          "label": "Disable image zooming"
         }
       ]
     },
     {
-      "label": "Fråga"
+      "label": "Question"
     },
     {
-      "label": "Tillgängliga val",
-      "entity": "val",
+      "label": "Available options",
+      "entity": "option",
       "field": {
-        "label": "Val",
+        "label": "Option",
         "fields": [
           {
             "label": "Text"
           },
           {
-            "label": "Rätt"
+            "label": "Correct"
           },
           {
-            "label": "Tips och feedback",
+            "label": "Tips and feedback",
             "fields": [
               {
-                "label": "Tipstext",
-                "description": "Ledtråd för användaren. Detta kommer visas innan användaren rättar sitt/sina svar."
+                "label": "Tip text",
+                "description": "Hint for the user. This will appear before user checks his answer/answers."
               },
               {
-                "label": "Meddelande visas om svar är valt",
-                "description": "Meddelande kommer visas under svaret när användaren väljer \"rätta\" om detta svar är valt."
+                "label": "Message displayed if answer is selected",
+                "description": "Message will appear below the answer on \"check\" if this answer is selected."
               },
               {
-                "label": "Meddelande visas om svar inte är valt displayed if answer is not selected",
-                "description": "Meddelande kommer visas under svaret när användaren väljer \"check\" om detta svar inte är valt."
+                "label": "Message displayed if answer is not selected",
+                "description": "Message will appear below the answer on \"check\" if this answer is not selected."
               }
             ]
           }
@@ -48,26 +48,26 @@
       }
     },
     {
-      "label": "Övergripande feedback",
+      "label": "Overall Feedback",
       "fields": [
         {
           "widgets": [
             {
-              "label": "Förvalt"
+              "label": "Default"
             }
           ],
-          "label": "Ange specifik feedback för valfritt poängintervall",
-          "description": "Klicka på knappen \"Lägg till intervall\" för att lägga till så många intervall du behöver. Exempel: 0-20 % Inte så bra, 21-91 % Medel, 91-100 % Jättebra!",
-          "entity": "intervall",
+          "label": "Define custom feedback for any score range",
+          "description": "Click the \"Add range\" button to add as many ranges as you need. Example: 0-20% Bad score, 21-91% Average Score, 91-100% Great Score!",
+          "entity": "range",
           "field": {
             "fields": [
               {
-                "label": "Poängintervall"
+                "label": "Score Range"
               },
               {},
               {
-                "label": "Feedback för specifikt poängintervall",
-                "placeholder": "Fyll i din feedback"
+                "label": "Feedback for defined score range",
+                "placeholder": "Fill in the feedback"
               }
             ]
           }
@@ -75,178 +75,166 @@
       ]
     },
     {
-      "label": "Översättningar i gränssnitt för flervalsfråga",
+      "label": "User interface translations for multichoice",
       "fields": [
         {
-          "label": "Etikett för rätta-knapp",
-          "default": "Rätta"
+          "label": "Check answer button label",
+          "default": "Check"
         },
         {
-          "label": "Etikett för knapp för visa lösning",
-          "default": "Visa lösning"
+          "label": "Show solution button label",
+          "default": "Show solution"
         },
         {
-          "label": "Etikett för försök igen-knapp",
-          "default": "Försök igen"
+          "label": "Retry button label",
+          "default": "Retry"
         },
         {
-          "label": "Tipsetikett",
-          "default": "Visa tips"
+          "label": "Tip label",
+          "default": "Show tip"
         },
         {
-          "label": "Text som används vid skärmläsare för att läsa upp poäng",
-          "description": "Tillgängliga variabler är :num och :total",
-          "default": "Du fick :num av :total poäng"
+          "label": "Textual representation of the score bar for those using a readspeaker",
+          "description": "Available variables are :num and :total",
+          "default": "You got :num out of :total points"
         },
         {
-          "label": "Tips tillgängligt  (visas inte)",
-          "default": "Tips tillgängligt",
-          "description": "Text för tillgänglighet, används av skärmläsare"
+          "label": "Tip Available (not displayed)",
+          "default": "Tip available",
+          "description": "Accessibility text used for readspeakers"
         },
         {
-          "label": "Feedback tillgänglig (visas inte)",
-          "default": "Feedback tillgänglig",
-          "description": "Text för tillgänglighet, används av skärmläsare"
+          "label": "Feedback Available (not displayed)",
+          "default": "Feedback available",
+          "description": "Accessibility text used for readspeakers"
         },
         {
-          "label": "Läs feedback (visas inte)",
-          "default": "Läs feedback",
-          "description": "Text för tillgänglighet, används av skärmläsare"
+          "label": "Read Feedback (not displayed)",
+          "default": "Read feedback",
+          "description": "Accessibility text used for readspeakers"
         },
         {
-          "label": "Fel svar (visas inte)",
-          "default": "Fel svar",
-          "description": "Text för tillgänglighet, används av skärmläsare"
+          "label": "Wrong Answer (not displayed)",
+          "default": "Wrong answer",
+          "description": "Accessibility text used for readspeakers"
         },
         {
-          "label": "Rätt svar (visas inte)",
-          "default": "Rätt svar",
-          "description": "Text för tillgänglighet, används av skärmläsare"
+          "label": "Correct Answer (not displayed)",
+          "default": "Correct answer",
+          "description": "Accessibility text used for readspeakers"
         },
         {
-          "label": "Detta val skulle ha bockats i",
-          "default": "Skulle ha bockats i"
+          "label": "Option should have been checked",
+          "default": "Should have been checked"
         },
         {
-          "label": "Detta val skulle inte ha bockats i",
-          "default": "Skulle inte ha bockats i"
+          "label": "Option should not have been checked",
+          "default": "Should not have been checked"
         },
         {
-          "label": "Text för \"Svar krävs \" meddelande",
-          "default": "Svara innan du visar lösningen"
-        },
-        {
-          "label": "Beskrivning av knappen \"Rätta\" för tillgänglighetshjälpmedel",
-          "default": "Rätta svaren. Svaren kommer att markeras som korrekta, felaktiga eller obesvarade."
-        },
-        {
-          "label": "Beskrivning av knappen \"Visa lösning\" för tillgänglighetshjälpmedel",
-          "default": "Visa lösningen. Uppgiften kommer att markeras med dess korrekta lösning."
-        },
-        {
-          "label": "Beskrivning av knappen \"Försök igen\" för tillgänglighetshjälpmedel",
-          "default": "Försök igen med uppgiften. Nollställer alla svar och startar om uppgiften igen."
+          "label": "Text for \"Requires answer\" message",
+          "default": "Please answer before viewing the solution"
         }
       ]
     },
     {
-      "label": "Beteende-inställningar",
-      "description": "Dessa val låter dig kontrollera hur uppgiften beter sig.",
+      "label": "Behavioural settings",
+      "description": "These options will let you control how the task behaves.",
       "fields": [
         {
-          "label": "Aktivera knappen \"Försök igen\""
+          "label": "Enable \"Retry\" button"
         },
         {
-          "label": "Aktivera knappen \"Visa lösning\""
+          "label": "Enable \"Show Solution\" button"
         },
         {
-          "label": "Aktivera knappen \"Rätta\""
+          "label": "Enable \"Check\" button"
         },
         {
-          "label": "Frågetyp",
-          "description": "Välj utseende och beteende för frågan.",
+          "label": "Question Type",
+          "description": "Select the look and behaviour of the question.",
           "options": [
             {
-              "label": "Automatiskt"
+              "label": "Automatic"
             },
             {
-              "label": "Flerval (checkrutor)"
+              "label": "Multiple Choice (Checkboxes)"
             },
             {
-              "label": "Enval (radioknappar)"
+              "label": "Single Choice (Radio Buttons)"
             }
           ]
         },
         {
-          "label": "Ge ett poäng för hela uppgiften",
-          "description": "Aktivera gör att ge totalt ett poäng för flera rätta svar. Detta är inte möjigt i läget \"Ett svar\" ."
+          "label": "Give one point for the whole task",
+          "description": "Enable to give a total of one point for multiple correct answers. This will not be an option in \"Single answer\" mode."
         },
         {
-          "label": "Slumpmässiga svarsalternativ",
-          "description": "Aktivera för att få slumpmässig ordning på svarsalternativ som visas."
+          "label": "Randomize answers",
+          "description": "Enable to randomize the order of the answers on display."
         },
         {
-          "label": "Kräv svar innan lösningen kan visas"
+          "label": "Require answer before the solution can be viewed"
         },
         {
-          "label": "Visa bekräftelse-dialog vid  \"Rätta\""
+          "label": "Show confirmation dialog on \"Check\""
         },
         {
-          "label": "Visa bekräftelse-dialog vid \"Försök igen\""
+          "label": "Show confirmation dialog on \"Retry\""
         },
         {
-          "label": "Kontrollera svar automatiskt",
-          "description": "Aktivering av detta val försämrar tillgänglighet, du bör vara säker på att du vet vad du gör."
+          "label": "Automatically check answers",
+          "description": "Enabling this option will make accessibility suffer, make sure you know what you're doing."
         },
         {
-          "label": "Procent för godkänt",
-          "description": "Denna inställning har ofta ingen påverkan. Det är procenten av total poäng somn krävs för att få 1 poäng, när ett poäng för hela uppgiften är aktiverat, och för att få result.success i xAPI."
+          "label": "Pass percentage",
+          "description": "This setting often won't have any effect. It is the percentage of the total score required for getting 1 point when one point for the entire task is enabled, and for getting result.success in xAPI statements."
         },
         {
-          "label": "Visa poäng",
-          "description": "Visa poäng som uppnåtts för varje svar. Detta är inte möjligt vid 'Ett svar' eller om 'Ge ett poäng för hela uppgiften' har aktiverats."
+          "label": "Show score points",
+          "description": "Show points earned for each answer. This will not be an option in 'Single answer' mode or if 'Give one point for the whole task' option is enabled."
         }
       ]
     },
     {
-      "label": "Bekräftelsedialog för avsluta",
+      "label": "Check confirmation dialog",
       "fields": [
         {
-          "label": "Rubriktext",
-          "default": "Avsluta?"
+          "label": "Header text",
+          "default": "Finish ?"
         },
         {
-          "label": "Text",
-          "default": "Är du säker på att du vill avsluta?"
+          "label": "Body text",
+          "default": "Are you sure you wish to finish ?"
         },
         {
-          "label": "Etikett på avbryt-knapp",
+          "label": "Cancel button label",
           "default": "Avbryt"
         },
         {
-          "label": "Etikett på knappen Bekräfta",
-          "default": "Avsluta"
+          "label": "Confirm button label",
+          "default": "Finish"
         }
       ]
     },
     {
-      "label": "Bekräftelsedialog för försök igen",
+      "label": "Retry confirmation dialog",
       "fields": [
         {
-          "label": "Rubriktext",
-          "default": "Försök igen?"
+          "label": "Header text",
+          "default": "Retry ?"
         },
         {
-          "label": "Text",
-          "default": "Är du säker på att du vill försöka igen?"
+          "label": "Body text",
+          "default": "Are you sure you wish to retry ?"
         },
         {
-          "label": "Etikett på avbryt-knapp",
-          "default": "Avbryt"
+          "label": "Cancel button label",
+          "default": "Cancel"
         },
         {
-          "label": "Etikett på bekräfta-knapp",
-          "default": "Bekräfta"
+          "label": "Confirm button label",
+          "default": "Confirm"
         }
       ]
     }

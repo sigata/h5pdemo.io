@@ -40,12 +40,12 @@
             }
           ],
           "label": "Definir retroalimentación personalizada para cualquier rango de puntaje",
-          "description": "Hacer cic en el botón de \"Añadir rango\" para añadir cuantos rangos necesite. Ejemplo: 0-20% Mal puntaje, 21-91% Puntaje promedio, 91-100% ¡Magnífico Puntaje!",
+          "description": "CHacer cic en el botón de \"Añadir rango\" para añadir cuantos rangos necesite. Ejemplo: 0-20% Mal puntaje, 21-91% Puntaje promedio, 91-100% ¡Magnífico Puntaje!",
           "entity": "rango",
           "field": {
             "fields": [
               {
-                "label": "Rango de Puntaje"
+                "label": "Tango de Puntaje"
               },
               {},
               {
@@ -99,7 +99,7 @@
       "default": "Vacío ingreso @num de @total"
     },
     {
-      "label": "Etiqueta para tecnología asistiva para decir que una entrada tiene una pista asociada a ella",
+      "label": "Etiqueta para tecnología sistiva para decir que una entrada tiene una pista asociada a ella",
       "default": "Pista disponible"
     },
     {
@@ -127,7 +127,7 @@
           "description": "Asegurar que la entrada del usuario tenga que ser exactamente la misma que la respuesta."
         },
         {
-          "label": "Requerir que todos los campos sean contestados antes que que pueda ser vista la solución"
+          "label": "Requerir qye todos los campos sean contestados antes que que pueda ser vista la solución"
         },
         {
           "label": "Poner campos de entrada en líneas separadas"
@@ -190,22 +190,6 @@
     {
       "label": "Representación textual de la barra de puntaje para aquellos que usan un Lector de voz",
       "default": "Usted obtuvo :num de un total de :total puntos"
-    },
-    {
-      "label": "Descripción de tecnología asistiva para botón \"Revisar\" ",
-      "default": "Revisar las respuestas. Las respuestas serán marcadas como correcta, incorrecta o sin contestar."
-    },
-    {
-      "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\" ",
-      "default": "Mostrar la solución. El trabajo será marcado con su solución correcta."
-    },
-    {
-      "label": "Descripción de tecnología asistiva para botón \"Reintentar\" ",
-      "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
-    },
-    {
-      "label": "Descripción de tecnología asistiva para comenzando el trabajo",
-      "default": "Modo de revisión"
     }
   ]
 }
