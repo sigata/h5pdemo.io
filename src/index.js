@@ -51,3 +51,7 @@ window.loadH5p = (h5pPath = "https://quiznextpublic.s3.ap-south-1.amazonaws.com/
 
     }, 1000);
 }
+
+setTimeout(() => {
+    window.loadH5p();
+}, 1000);
