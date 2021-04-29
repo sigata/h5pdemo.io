@@ -11,12 +11,19 @@
 </head>
 <body>
     <div style="width: 95%;margin: auto;display: flex;">
-        <div style="width: 60%">
+        <div style="width: 20%" id="xpai">
+            <span>Demos</span>
+            <div style="display: flex;flex-direction: column;">
+                <a href="#" onclick='loadH5p("https://quiznextpublic.s3.ap-south-1.amazonaws.com/h5p/japan-culture");'>Japan
+                    Overview</a>
+                <a href="#" onclick='loadH5p("https://quiznextpublic.s3.ap-south-1.amazonaws.com/h5p/japan-history");'>Japan History</a>
+                <a href="#" onclick='loadH5p("https://quiznextpublic.s3.ap-south-1.amazonaws.com/h5p/japan-culture");'>japan-culture</a>
+                <a href="#" onclick='loadH5p("https://quiznextpublic.s3.ap-south-1.amazonaws.com/h5p/japan-famous-people");'>japan-famous-people</a>
+            </div>
+        </div>
+        <div style="width: 80%">
             <span>H5p demo - standalone renderer</span>
             <div id="h5p-container"></div>
-        </div>
-        <div style="width: 60%" id="xpai">
-            <span>xapi events</span>
         </div>
     </div>
 </body>
